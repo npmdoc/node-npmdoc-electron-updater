@@ -1,0 +1,1320 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/electron-userland/electron-builder"
+
+    >electron-updater (v1.14.0)</a>
+</h1>
+<h4>Cross platform updater for electron applications</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.electron-updater">module electron-updater</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">electron-updater.</span>AppUpdater</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">electron-updater.</span>BintrayProvider</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">electron-updater.</span>GenericProvider</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">electron-updater.</span>GitHubProvider</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">electron-updater.</span>MacUpdater</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">electron-updater.</span>NsisUpdater</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">electron-updater.</span>PrivateGitHubProvider</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">electron-updater.</span>api</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">electron-updater.</span>electronHttpExecutor</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.electron-updater.AppUpdater">module electron-updater.AppUpdater</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.electron-updater.AppUpdater.AppUpdater">
+            function <span class="apidocSignatureSpan">electron-updater.</span>AppUpdater
+            <span class="apidocSignatureSpan">(_events || _load_events()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.electron-updater.BintrayProvider">module electron-updater.BintrayProvider</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.electron-updater.BintrayProvider.BintrayProvider">
+            function <span class="apidocSignatureSpan">electron-updater.</span>BintrayProvider
+            <span class="apidocSignatureSpan">(_api || _load_api()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.electron-updater.GenericProvider">module electron-updater.GenericProvider</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.electron-updater.GenericProvider.GenericProvider">
+            function <span class="apidocSignatureSpan">electron-updater.</span>GenericProvider
+            <span class="apidocSignatureSpan">(_api || _load_api()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.electron-updater.GenericProvider.validateUpdateInfo">
+            function <span class="apidocSignatureSpan">electron-updater.GenericProvider.</span>validateUpdateInfo
+            <span class="apidocSignatureSpan">(info)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.electron-updater.GitHubProvider">module electron-updater.GitHubProvider</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.electron-updater.GitHubProvider.GitHubProvider">
+            function <span class="apidocSignatureSpan">electron-updater.</span>GitHubProvider
+            <span class="apidocSignatureSpan">(options, updater)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.electron-updater.GitHubProvider.BaseGitHubProvider">
+            function <span class="apidocSignatureSpan">electron-updater.GitHubProvider.</span>BaseGitHubProvider
+            <span class="apidocSignatureSpan">(_api || _load_api()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.electron-updater.MacUpdater">module electron-updater.MacUpdater</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.electron-updater.MacUpdater.MacUpdater">
+            function <span class="apidocSignatureSpan">electron-updater.</span>MacUpdater
+            <span class="apidocSignatureSpan">(_AppUpdater || _load_AppUpdater()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.electron-updater.NsisUpdater">module electron-updater.NsisUpdater</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.electron-updater.NsisUpdater.NsisUpdater">
+            function <span class="apidocSignatureSpan">electron-updater.</span>NsisUpdater
+            <span class="apidocSignatureSpan">(_AppUpdater || _load_AppUpdater()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.electron-updater.PrivateGitHubProvider">module electron-updater.PrivateGitHubProvider</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.electron-updater.PrivateGitHubProvider.PrivateGitHubProvider">
+            function <span class="apidocSignatureSpan">electron-updater.</span>PrivateGitHubProvider
+            <span class="apidocSignatureSpan">(_GitHubProvider || _load_GitHubProvider()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.electron-updater.api">module electron-updater.api</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.electron-updater.api.Provider">
+            function <span class="apidocSignatureSpan">electron-updater.api.</span>Provider
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.electron-updater.api.UpdaterSignal">
+            function <span class="apidocSignatureSpan">electron-updater.api.</span>UpdaterSignal
+            <span class="apidocSignatureSpan">(emitter)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.electron-updater.api.formatUrl">
+            function <span class="apidocSignatureSpan">electron-updater.api.</span>formatUrl
+            <span class="apidocSignatureSpan">(url)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.electron-updater.api.getChannelFilename">
+            function <span class="apidocSignatureSpan">electron-updater.api.</span>getChannelFilename
+            <span class="apidocSignatureSpan">(channel)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.electron-updater.api.getCurrentPlatform">
+            function <span class="apidocSignatureSpan">electron-updater.api.</span>getCurrentPlatform
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.electron-updater.api.getCustomChannelName">
+            function <span class="apidocSignatureSpan">electron-updater.api.</span>getCustomChannelName
+            <span class="apidocSignatureSpan">(channel)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.electron-updater.api.getDefaultChannelName">
+            function <span class="apidocSignatureSpan">electron-updater.api.</span>getDefaultChannelName
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">electron-updater.api.</span>DOWNLOAD_PROGRESS</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.electron-updater.electronHttpExecutor">module electron-updater.electronHttpExecutor</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.electron-updater.electronHttpExecutor.ElectronHttpExecutor">
+            function <span class="apidocSignatureSpan">electron-updater.electronHttpExecutor.</span>ElectronHttpExecutor
+            <span class="apidocSignatureSpan">(_electronBuilderHttp || _load_electronBuilderHttp()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">electron-updater.electronHttpExecutor.</span>NET_SESSION_NAME</span>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.electron-updater" id="apidoc.module.electron-updater">module electron-updater</a></h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.electron-updater.AppUpdater" id="apidoc.module.electron-updater.AppUpdater">module electron-updater.AppUpdater</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.electron-updater.AppUpdater.AppUpdater" id="apidoc.element.electron-updater.AppUpdater.AppUpdater">
+        function <span class="apidocSignatureSpan">electron-updater.</span>AppUpdater
+        <span class="apidocSignatureSpan">(_events || _load_events()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class AppUpdater extends (_events || _load_events()).EventEmitter {
+    constructor(options, app) {
+        super();
+<span class="apidocCodeCommentSpan">        /**
+         * Whether to automatically download an update when it is found.
+         */
+</span>        this.autoDownload = true;
+        /**
+         * *GitHub provider only.* Whether to allow update to pre-release versions. Defaults to `true` if application version contains
+ prerelease components (e.g. `0.12.1-alpha.1`, here `alpha` is a prerelease component), otherwise `false`.
+         *
+         * If `true`, downgrade will be allowed (`allowDowngrade` will be set to `true`).
+         */
+        this.allowPrerelease = false;
+        /**
+         * Whether to allow version downgrade (when a user from the beta channel wants to go back to the stable channel).
+         * Defaults to `true` if application version contains prerelease components (e.g. `0.12.1-alpha.1`, here `alpha` is a prerelease
+ component), otherwise `false`.
+         */
+        this.allowDowngrade = false;
+        /**
+         * The logger. You can pass [electron-log](https://github.com/megahertz/electron-log), [winston](https://github.com/winstonjs
+/winston) or another logger with the following interface: `{ info(), warn(), error() }`.
+         * Set it to `null` if you would like to disable a logging feature.
+         */
+        this.logger = global.__test_app ? null : console;
+        /**
+         * For type safety you can use signals, e.g. `autoUpdater.signals.updateDownloaded(() =&#x3e; {})` instead of `autoUpdater.on
+(&#x27;update-available&#x27;, () =&#x3e; {})`
+         */
+        this.signals = new (_api || _load_api()).UpdaterSignal(this);
+        this.updateAvailable = false;
+        this.on(&#x22;error&#x22;, error =&#x3e; {
+            if (this.logger != null) {
+                this.logger.error(`Error: ${error.stack || error.message}`);
+            }
+        });
+        if (app != null || global.__test_app != null) {
+            this.app = app || global.__test_app;
+            this.untilAppReady = (_bluebirdLst2 || _load_bluebirdLst2()).default.resolve();
+        } else {
+            this.app = require(&#x22;electron&#x22;).app;
+            (_electronBuilderHttp || _load_electronBuilderHttp()).executorHolder.httpExecutor = new (_electronHttpExecutor || _load_electronHttpExecutor
+()).ElectronHttpExecutor();
+            this.untilAppReady = new (_bluebirdLst2 || _load_bluebirdLst2()).default(resolve =&#x3e; {
+                if (this.app.isReady()) {
+                    if (this.logger != null) {
+                        this.logger.info(&#x22;App is ready&#x22;);
+                    }
+                    resolve();
+                } else {
+                    if (this.logger != null) {
+                        this.logger.info(&#x22;Wait for app ready&#x22;);
+                    }
+                    this.app.on(&#x22;ready&#x22;, resolve);
+                }
+            });
+        }
+        const currentVersionString = this.app.getVersion();
+        this.currentVersion = (0, (_semver || _load_semver()).valid)(currentVersionString);
+        if (this.currentVersion == null) {
+            throw new Error(`App version is not valid semver version: &#x22;${currentVersionString}`);
+        }
+        const versionPrereleaseComponent = (0, (_semver || _load_semver()).prerelease)(this.currentVersion);
+        this.allowDowngrade = versionPrereleaseComponent != null &#x26;&#x26; versionPrereleaseComponent.length &#x3e; 0;
+        this.allowPrerelease = this.allowDowngrade;
+        if (options != null) {
+            this.setFeedURL(options);
+        }
+    }
+    set updateConfigPath(value) {
+        this.clientPromise = null;
+        this._appUpdateConfigPath = value;
+    }
+    //noinspection JSMethodCanBeStatic,JSUnusedGlobalSymbols
+    getFeedURL() {
+        return &#x22;Deprecated. Do not use it.&#x22;;
+    }
+    /**
+     * Configure update provider. If value is `string`, {@link module:electron-builder-http/out/publishOptions.GenericServerOptions
+} will be set with value as `url`.
+     * @param options If you want to override configuration in the `app-update.yml`.
+     */
+    setFeedURL(options) {
+        // https://github.com/electron-userlan ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.electron-updater.BintrayProvider" id="apidoc.module.electron-updater.BintrayProvider">module electron-updater.BintrayProvider</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.electron-updater.BintrayProvider.BintrayProvider" id="apidoc.element.electron-updater.BintrayProvider.BintrayProvider">
+        function <span class="apidocSignatureSpan">electron-updater.</span>BintrayProvider
+        <span class="apidocSignatureSpan">(_api || _load_api()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class BintrayProvider extends (_api || _load_api()).Provider {
+    constructor(configuration) {
+        super();
+        this.client = new (_bintray || _load_bintray()).BintrayClient(configuration, new (_CancellationToken || _load_CancellationToken
+()).CancellationToken());
+    }
+    getLatestVersion() {
+        var _this = this;
+
+        return (0, (_bluebirdLst || _load_bluebirdLst()).coroutine)(function* () {
+            try {
+                const data = yield _this.client.getVersion(&#x22;_latest&#x22;);
+                return {
+                    version: data.name
+                };
+            } catch (e) {
+                if (&#x22;response&#x22; in e &#x26;&#x26; e.response.statusCode === 404) {
+                    throw new Error(`No latest version, please ensure that user, package and repository correctly configured. Or
+ at least one version is published. ${e.stack || e.message}`);
+                }
+                throw e;
+            }
+        })();
+    }
+    getUpdateFile(versionInfo) {
+        var _this2 = this;
+
+        return (0, (_bluebirdLst || _load_bluebirdLst()).coroutine)(function* () {
+            try {
+                const files = yield _this2.client.getVersionFiles(versionInfo.version);
+                const suffix = `${versionInfo.version}.exe`;
+                const file = files.find(function (it) {
+                    return it.name.endsWith(suffix) &#x26;&#x26; it.name.indexOf(&#x22;Setup&#x22;) !== -1;
+                }) || files.find(function (it) {
+                    return it.name.endsWith(suffix);
+                }) || files.find(function (it) {
+                    return it.name.endsWith(&#x22;.exe&#x22;);
+                });
+                if (file == null) {
+                    //noinspection ExceptionCaughtLocallyJS
+                    throw new Error(`Cannot find suitable file for version ${versionInfo.version} in: ${JSON.stringify(files, null
+, 2)}`);
+                }
+                return {
+                    name: file.name,
+                    url: `https://dl.bintray.com/${_this2.client.owner}/${_this2.client.repo}/${file.name}`,
+                    sha2: file.sha256
+                };
+            } catch (e) {
+                if (e instanceof (_electronBuilderHttp || _load_electronBuilderHttp()).HttpError &#x26;&#x26; e.response.statusCode === 404
+) {
+                    throw new Error(`No latest version, please ensure that user, package and repository correctly configured. Or
+ at least one version is published. ${e.stack || e.message}`);
+                }
+                throw e;
+            }
+        })();
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+                        url: (0, (_publishOptions || _load_publishOptions()).s3Url)(s3),
+                        channel: s3.channel || &#x22;&#x22;
+                    });
+                }
+            case &#x22;generic&#x22;:
+                return new (_GenericProvider || _load_GenericProvider()).GenericProvider(data);
+            case &#x22;bintray&#x22;:
+                return new (_BintrayProvider || _load_BintrayProvider()).<span class="apidocCodeKeywordSpan">BintrayProvider</span
+>(data);
+            default:
+                throw new Error(`Unsupported provider: ${provider}`);
+        }
+    }
+}
+exports.AppUpdater = AppUpdater; //# sourceMappingURL=AppUpdater.js.map
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.electron-updater.GenericProvider" id="apidoc.module.electron-updater.GenericProvider">module electron-updater.GenericProvider</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.electron-updater.GenericProvider.GenericProvider" id="apidoc.element.electron-updater.GenericProvider.GenericProvider">
+        function <span class="apidocSignatureSpan">electron-updater.</span>GenericProvider
+        <span class="apidocSignatureSpan">(_api || _load_api()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class GenericProvider extends (_api || _load_api()).Provider {
+    constructor(configuration) {
+        super();
+        this.configuration = configuration;
+        this.baseUrl = (_url || _load_url()).parse(this.configuration.url);
+        this.channel = this.configuration.channel ? (0, (_api || _load_api()).getCustomChannelName)(this.configuration.channel) : (
+0, (_api || _load_api()).getDefaultChannelName)();
+    }
+    getLatestVersion() {
+        var _this = this;
+
+        return (0, (_bluebirdLst || _load_bluebirdLst()).coroutine)(function* () {
+            let result = null;
+            const channelFile = (0, (_api || _load_api()).getChannelFilename)(_this.channel);
+            const pathname = _path.posix.resolve(_this.baseUrl.pathname || &#x22;/&#x22;, channelFile);
+            try {
+                const options = {
+                    hostname: _this.baseUrl.hostname,
+                    path: `${pathname}${_this.baseUrl.search || &#x22;&#x22;}`,
+                    protocol: _this.baseUrl.protocol,
+                    headers: _this.requestHeaders || undefined
+                };
+                if (_this.baseUrl.port != null) {
+                    options.port = parseInt(_this.baseUrl.port, 10);
+                }
+                result = yield (0, (_electronBuilderHttp || _load_electronBuilderHttp()).request)(options, new (_CancellationToken
+ || _load_CancellationToken()).CancellationToken());
+            } catch (e) {
+                if (e instanceof (_electronBuilderHttp || _load_electronBuilderHttp()).HttpError &#x26;&#x26; e.response.statusCode === 404
+) {
+                    throw new Error(`Cannot find channel &#x22;${channelFile}&#x22; update info: ${e.stack || e.message}`);
+                }
+                throw e;
+            }
+            validateUpdateInfo(result);
+            if ((0, (_api || _load_api()).getCurrentPlatform)() === &#x22;darwin&#x22;) {
+                result.releaseJsonUrl = (_url || _load_url()).format(Object.assign({}, _this.baseUrl, { pathname: pathname }));
+            }
+            return result;
+        })();
+    }
+    getUpdateFile(versionInfo) {
+        var _this2 = this;
+
+        return (0, (_bluebirdLst || _load_bluebirdLst()).coroutine)(function* () {
+            if ((0, (_api || _load_api()).getCurrentPlatform)() === &#x22;darwin&#x22;) {
+                return versionInfo;
+            }
+            return {
+                name: _path.posix.basename(versionInfo.path),
+                url: (_url || _load_url()).format(Object.assign({}, _this2.baseUrl, { pathname: _path.posix.resolve(_this2.baseUrl
+.pathname || &#x22;/&#x22;, versionInfo.path) })),
+                sha2: versionInfo.sha2
+            };
+        })();
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * Configure update provider. If value is `string`, {@link module:electron-builder-http/out/publishOptions.GenericServerOptions}
+will be set with value as `url`.
+ * @param options If you want to override configuration in the `app-update.yml`.
+ */
+setFeedURL(options) {
+    // https://github.com/electron-userland/electron-builder/issues/1105
+    let client;
+    if (typeof options === &#x22;string&#x22;) {
+        client = new (_GenericProvider || _load_GenericProvider()).<span class="apidocCodeKeywordSpan">GenericProvider</span>({
+provider: &#x22;generic&#x22;, url: options });
+    } else {
+        client = this.createClient(options);
+    }
+    this.clientPromise = (_bluebirdLst2 || _load_bluebirdLst2()).default.resolve(client);
+}
+/**
+ * Asks the server whether there is an update.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.electron-updater.GenericProvider.validateUpdateInfo" id="apidoc.element.electron-updater.GenericProvider.validateUpdateInfo">
+        function <span class="apidocSignatureSpan">electron-updater.GenericProvider.</span>validateUpdateInfo
+        <span class="apidocSignatureSpan">(info)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function validateUpdateInfo(info) {
+    if ((0, (_api || _load_api()).getCurrentPlatform)() === &#x22;darwin&#x22;) {
+        if (info.url == null) {
+            throw new Error(&#x22;Update info doesn&#x27;t contain url&#x22;);
+        }
+        return;
+    }
+    if (info.sha2 == null) {
+        throw new Error(`Update info doesn&#x27;t contain sha2 checksum: ${JSON.stringify(info, null, 2)}`);
+    }
+    if (info.path == null) {
+        throw new Error(`Update info doesn&#x27;t contain file path: ${JSON.stringify(info, null, 2)}`);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.electron-updater.GitHubProvider" id="apidoc.module.electron-updater.GitHubProvider">module electron-updater.GitHubProvider</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.electron-updater.GitHubProvider.GitHubProvider" id="apidoc.element.electron-updater.GitHubProvider.GitHubProvider">
+        function <span class="apidocSignatureSpan">electron-updater.</span>GitHubProvider
+        <span class="apidocSignatureSpan">(options, updater)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class GitHubProvider extends BaseGitHubProvider {
+    constructor(options, updater) {
+        super(options, &#x22;github.com&#x22;);
+        this.options = options;
+        this.updater = updater;
+    }
+    getLatestVersion() {
+        var _this = this;
+
+        return (0, (_bluebirdLst || _load_bluebirdLst()).coroutine)(function* () {
+            const basePath = _this.basePath;
+            const cancellationToken = new (_CancellationToken || _load_CancellationToken()).CancellationToken();
+            const xElement = require(&#x22;xelement&#x22;);
+            const feedXml = yield (0, (_electronBuilderHttp || _load_electronBuilderHttp()).request)(Object.assign({
+                path: `${basePath}.atom`,
+                headers: Object.assign({}, _this.requestHeaders, { Accept: &#x22;application/xml&#x22; })
+            }, _this.baseUrl), cancellationToken);
+            const feed = new xElement.Parse(feedXml);
+            const latestRelease = feed.element(&#x22;entry&#x22;);
+            if (latestRelease == null) {
+                throw new Error(`No published versions on GitHub`);
+            }
+            let version;
+            try {
+                if (_this.updater.allowPrerelease) {
+                    version = latestRelease.element(&#x22;link&#x22;).getAttr(&#x22;href&#x22;).match(/\/tag\/v?([^\/]+)$/)[1];
+                } else {
+                    version = yield _this.getLatestVersionString(basePath, cancellationToken);
+                }
+            } catch (e) {
+                throw new Error(`Cannot parse releases feed: ${e.stack || e.message},\nXML:\n${feedXml}`);
+            }
+            let result;
+            const channelFile = (0, (_api || _load_api()).getChannelFilename)((0, (_api || _load_api()).getDefaultChannelName)());
+            const requestOptions = Object.assign({ path: _this.getBaseDownloadPath(version, channelFile), headers: _this.requestHeaders
+ || undefined }, _this.baseUrl);
+            try {
+                result = yield (0, (_electronBuilderHttp || _load_electronBuilderHttp()).request)(requestOptions, cancellationToken
+);
+            } catch (e) {
+                if (!_this.updater.allowPrerelease) {
+                    if (e instanceof (_electronBuilderHttp || _load_electronBuilderHttp()).HttpError &#x26;&#x26; e.response.statusCode ===
+404) {
+                        throw new Error(`Cannot find ${channelFile} in the latest release artifacts (${(0, (_api || _load_api()).
+formatUrl)(requestOptions)}): ${e.stack || e.message}`);
+                    }
+                }
+                throw e;
+            }
+            (0, (_GenericProvider || _load_GenericProvider()).validateUpdateInfo)(result);
+            if ((0, (_api || _load_api()).getCurrentPlatform)() === &#x22;darwin&#x22;) {
+                result.releaseJsonUrl = `${(0, (_publishOptions || _load_publishOptions()).githubUrl)(_this.options)}/${requestOptions
+.path}`;
+            }
+            if (result.releaseName == null) {
+                result.releaseName = latestRelease.getElementValue(&#x22;title&#x22;);
+            }
+            if (result.releaseNotes == null) {
+                result.releaseNotes = latestRelease.getElementValue(&#x22;content&#x22;);
+            }
+            return result;
+        })();
+    }
+    getLatestVersionString(basePath, cancellationToken) {
+        var _this2 = this;
+
+        return (0, (_bluebirdLst || _load_bluebirdLst()).coroutine)(function* () {
+            const requestOptions = Object.assign({
+                path: `${basePath}/latest`,
+                headers: Object.assign({}, _this2.requestHeaders, { Accept: &#x22;application/json&#x22; })
+            }, _this2.baseUrl);
+            try {
+                // do not use API to avoid limit
+                const releaseInfo = yield (0, (_electronBuilderHttp || _load_electronBuilderHttp()).request)(requestOptions, cancellationToken
+);
+                return releaseInfo.tag_name.startsWith(&#x22;v&#x22;) ? releaseInfo.tag_name.substring(1) : releaseInfo.tag_name;
+            } catch (e) {
+                throw new Error(`Unable to find latest version on GitHub (${(0, (_api || _load_api()).formatUrl)(requestOptions)}),
+please ensure a production re ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+const provider = data.provider;
+switch (provider) {
+    case &#x22;github&#x22;:
+        const githubOptions = data;
+        const token = (githubOptions.private ? process.env.GH_TOKEN : null) || githubOptions.token;
+        if (token == null) {
+            return new (_GitHubProvider || _load_GitHubProvider()).<span class="apidocCodeKeywordSpan">GitHubProvider</span>(githubOptions
+, this);
+        } else {
+            return new (_PrivateGitHubProvider || _load_PrivateGitHubProvider()).PrivateGitHubProvider(githubOptions, token);
+        }
+    case &#x22;s3&#x22;:
+        {
+            const s3 = data;
+            return new (_GenericProvider || _load_GenericProvider()).GenericProvider({
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.electron-updater.GitHubProvider.BaseGitHubProvider" id="apidoc.element.electron-updater.GitHubProvider.BaseGitHubProvider">
+        function <span class="apidocSignatureSpan">electron-updater.GitHubProvider.</span>BaseGitHubProvider
+        <span class="apidocSignatureSpan">(_api || _load_api()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class BaseGitHubProvider extends (_api || _load_api()).Provider {
+    constructor(options, baseHost) {
+        super();
+        this.options = options;
+        const baseUrl = (0, (_url || _load_url()).parse)(`${options.protocol || &#x22;https&#x22;}://${options.host || baseHost}`);
+        this.baseUrl = {
+            protocol: baseUrl.protocol,
+            hostname: baseUrl.hostname,
+            port: baseUrl.port
+        };
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.electron-updater.MacUpdater" id="apidoc.module.electron-updater.MacUpdater">module electron-updater.MacUpdater</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.electron-updater.MacUpdater.MacUpdater" id="apidoc.element.electron-updater.MacUpdater.MacUpdater">
+        function <span class="apidocSignatureSpan">electron-updater.</span>MacUpdater
+        <span class="apidocSignatureSpan">(_AppUpdater || _load_AppUpdater()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class MacUpdater extends (_AppUpdater || _load_AppUpdater()).AppUpdater {
+    constructor(options) {
+        super(options);
+        this.nativeUpdater = require(&#x22;electron&#x22;).autoUpdater;
+        this.nativeUpdater.on(&#x22;error&#x22;, it =&#x3e; {
+            if (this.logger != null) {
+                this.logger.warn(it);
+            }
+            this.emit(&#x22;error&#x22;, it);
+        });
+        this.nativeUpdater.on(&#x22;update-downloaded&#x22;, () =&#x3e; {
+            if (this.logger != null) {
+                this.logger.info(`New version ${this.versionInfo.version} has been downloaded`);
+            }
+            this.emit(&#x22;update-downloaded&#x22;, this.versionInfo);
+        });
+    }
+    onUpdateAvailable(versionInfo, fileInfo) {
+        this.nativeUpdater.setFeedURL(versionInfo.releaseJsonUrl, Object.assign({ &#x22;Cache-Control&#x22;: &#x22;no-cache&#x22; }, this.computeRequestHeaders
+(fileInfo)));
+        super.onUpdateAvailable(versionInfo, fileInfo);
+    }
+    doDownloadUpdate(versionInfo, fileInfo, cancellationToken) {
+        this.nativeUpdater.checkForUpdates();
+        return (_bluebirdLst || _load_bluebirdLst()).default.resolve();
+    }
+    quitAndInstall() {
+        this.nativeUpdater.quitAndInstall();
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.electron-updater.NsisUpdater" id="apidoc.module.electron-updater.NsisUpdater">module electron-updater.NsisUpdater</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.electron-updater.NsisUpdater.NsisUpdater" id="apidoc.element.electron-updater.NsisUpdater.NsisUpdater">
+        function <span class="apidocSignatureSpan">electron-updater.</span>NsisUpdater
+        <span class="apidocSignatureSpan">(_AppUpdater || _load_AppUpdater()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class NsisUpdater extends (_AppUpdater || _load_AppUpdater()).AppUpdater {
+    constructor(options, app) {
+        super(options, app);
+        this.quitAndInstallCalled = false;
+        this.quitHandlerAdded = false;
+    }
+<span class="apidocCodeCommentSpan">    /**
+     * Start downloading update manually. You can use this method if `autoDownload` option is set to `false`.
+     * @returns {Promise&#x3c;string&#x3e;} Path to downloaded file.
+     */
+</span>    doDownloadUpdate(versionInfo, fileInfo, cancellationToken) {
+        var _this = this;
+
+        return (0, (_bluebirdLst || _load_bluebirdLst()).coroutine)(function* () {
+            const downloadOptions = {
+                skipDirCreation: true,
+                headers: _this.computeRequestHeaders(fileInfo),
+                cancellationToken: cancellationToken,
+                sha2: fileInfo == null ? null : fileInfo.sha2
+            };
+            if (_this.listenerCount((_api || _load_api()).DOWNLOAD_PROGRESS) &#x3e; 0) {
+                downloadOptions.onProgress = function (it) {
+                    return _this.emit((_api || _load_api()).DOWNLOAD_PROGRESS, it);
+                };
+            }
+            const logger = _this.logger;
+            const tempDir = yield (0, (_fsExtraP || _load_fsExtraP()).mkdtemp)(`${_path.join((0, (_os || _load_os()).tmpdir)(), &#x22;
+up&#x22;)}-`);
+            const tempFile = _path.join(tempDir, fileInfo.name);
+            try {
+                yield (0, (_electronBuilderHttp || _load_electronBuilderHttp()).download)(fileInfo.url, tempFile, downloadOptions
+);
+            } catch (e) {
+                try {
+                    yield (0, (_fsExtraP || _load_fsExtraP()).remove)(tempDir);
+                } catch (ignored) {
+                    // ignored
+                }
+                if (e instanceof (_CancellationToken || _load_CancellationToken()).CancellationError) {
+                    _this.emit(&#x22;update-cancelled&#x22;, _this.versionInfo);
+                    if (logger != null) {
+                        logger.info(&#x22;Cancelled&#x22;);
+                    }
+                }
+                throw e;
+            }
+            if (logger != null) {
+                logger.info(`New version ${_this.versionInfo.version} has been downloaded to ${tempFile}`);
+            }
+            _this.setupPath = tempFile;
+            _this.addQuitHandler();
+            _this.emit(&#x22;update-downloaded&#x22;, _this.versionInfo);
+            return tempFile;
+        })();
+    }
+    addQuitHandler() {
+        if (this.quitHandlerAdded) {
+            return;
+        }
+        this.quitHandlerAdded = true;
+        this.app.on(&#x22;quit&#x22;, () =&#x3e; {
+            if (this.logger != null) {
+                this.logger.info(&#x22;Auto install update on quit&#x22;);
+            }
+            this.install(true);
+        });
+    }
+    quitAndInstall() {
+        if (this.install(false)) {
+            this.app.quit();
+        }
+    }
+    install(isSilent) {
+        if (this.quitAndInstallCalled) {
+            return false;
+        }
+        const setupPath = this.setupPath;
+        if (!this.updateAvailable || setupPath == null) {
+            const message = &#x22;No update available, can&#x27;t quit and install&#x22;;
+            this.emit(&#x22;error&#x22;, new Error(message), message);
+            return false;
+        }
+        // prevent calling several times
+        this.quitAndInstallCalled = true;
+        const args = [&#x22;--updated&#x22;];
+        if (isSilent) {
+            args.push(&#x22;/S&#x22;);
+        }
+        const spawnOptions = {
+            detached: true,
+            stdio: &#x22;ignore&#x22;
+        };
+        try {
+            (0, (_child_process || _load_child_process()).spawn)(setupPath, args, spawnOptions).unref();
+        } catch (e) {
+            // yes, such errors dispatched not as error event
+            // https://github.com/electron-userland/electron-builder/issues/1129
+            if (e.code === &#x22;UNKNOWN&#x22;) {
+                if (this.logger != null) {
+                    this.logger.info(&#x22;UNKNOWN error code on spawn, will be executed again using elevate&#x22;);
+                }
+                try {
+                    (0, (_child_process || _load_child_process()).spawn)(_p ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.electron-updater.PrivateGitHubProvider" id="apidoc.module.electron-updater.PrivateGitHubProvider">module electron-updater.PrivateGitHubProvider</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.electron-updater.PrivateGitHubProvider.PrivateGitHubProvider" id="apidoc.element.electron-updater.PrivateGitHubProvider.PrivateGitHubProvider">
+        function <span class="apidocSignatureSpan">electron-updater.</span>PrivateGitHubProvider
+        <span class="apidocSignatureSpan">(_GitHubProvider || _load_GitHubProvider()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class PrivateGitHubProvider extends (_GitHubProvider || _load_GitHubProvider()).BaseGitHubProvider {
+    constructor(options, token) {
+        super(options, &#x22;api.github.com&#x22;);
+        this.token = token;
+        this.netSession = (_electron || _load_electron()).session.fromPartition((_electronHttpExecutor || _load_electronHttpExecutor
+()).NET_SESSION_NAME);
+        this.registerHeaderRemovalListener();
+    }
+    getLatestVersion() {
+        var _this = this;
+
+        return (0, (_bluebirdLst || _load_bluebirdLst()).coroutine)(function* () {
+            const basePath = _this.basePath;
+            const cancellationToken = new (_CancellationToken || _load_CancellationToken()).CancellationToken();
+            const channelFile = (0, (_api || _load_api()).getChannelFilename)((0, (_api || _load_api()).getDefaultChannelName)());
+            const assets = yield _this.getLatestVersionInfo(basePath, cancellationToken);
+            const requestOptions = Object.assign({
+                headers: _this.configureHeaders(&#x22;application/octet-stream&#x22;),
+                session: _this.netSession
+            }, (0, (_url || _load_url()).parse)(assets.find(function (it) {
+                return it.name == channelFile;
+            }).url));
+            let result;
+            try {
+                result = yield (0, (_electronBuilderHttp || _load_electronBuilderHttp()).request)(requestOptions, cancellationToken
+);
+                if (typeof result === &#x22;string&#x22;) {
+                    if ((0, (_api || _load_api()).getCurrentPlatform)() === &#x22;darwin&#x22;) {
+                        result = JSON.parse(result);
+                    } else {
+                        result = (0, (_jsYaml || _load_jsYaml()).safeLoad)(result);
+                    }
+                }
+            } catch (e) {
+                if (e instanceof (_electronBuilderHttp || _load_electronBuilderHttp()).HttpError &#x26;&#x26; e.response.statusCode === 404
+) {
+                    throw new Error(`Cannot find ${channelFile} in the latest release artifacts (${(0, (_api || _load_api()).formatUrl
+)(requestOptions)}): ${e.stack || e.message}`);
+                }
+                throw e;
+            }
+            (0, (_GenericProvider || _load_GenericProvider()).validateUpdateInfo)(result);
+            if ((0, (_api || _load_api()).getCurrentPlatform)() === &#x22;darwin&#x22;) {
+                result.releaseJsonUrl = `${_this.options.protocol || &#x22;https&#x22;}://${_this.options.host || &#x22;api.github.com&#x22;}${requestOptions
+.path}`;
+            }
+            result.assets = assets;
+            return result;
+        })();
+    }
+    registerHeaderRemovalListener() {
+        const filter = {
+            urls: [&#x22;*://*.amazonaws.com/*&#x22;]
+        };
+        this.netSession.webRequest.onBeforeSendHeaders(filter, (details, callback) =&#x3e; {
+            if (details.requestHeaders.Authorization != null) {
+                delete details.requestHeaders.Authorization;
+            }
+            callback({ cancel: false, requestHeaders: details.requestHeaders });
+        });
+    }
+    configureHeaders(accept) {
+        return Object.assign({
+            Accept: accept,
+            Authorization: `token ${this.token}`
+        }, this.requestHeaders);
+    }
+    getLatestVersionInfo(basePath, cancellationToken) {
+        var _this2 = this;
+
+        return (0, (_bluebirdLst || _load_bluebirdLst()).coroutine)(function* () {
+            const requestOptions = Object.assign({
+                path: `${basePath}/latest`,
+                headers: _this2.configureHeaders(&#x22;application/vnd.github.v3+json&#x22;)
+            }, _this2.baseUrl);
+            try {
+                return (yield (0, (_electronBuilderHttp || _load_electronBuilderHttp()).request)(requestOptions, cancellationToken
+)).assets;
+            } catch (e) {
+                throw new Error(`Unable to find latest version on GitHub (${(0, (_api || _load_api()).formatUrl)(requestOptions)}),
+please ensure a production release exists: ${e.stack || e.message}`);
+            }
+        })();
+    }
+    get basePath() {
+        return `/repos/${this.options.owner}/${this.options.repo}/releases` ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        switch (provider) {
+case &#x22;github&#x22;:
+    const githubOptions = data;
+    const token = (githubOptions.private ? process.env.GH_TOKEN : null) || githubOptions.token;
+    if (token == null) {
+        return new (_GitHubProvider || _load_GitHubProvider()).GitHubProvider(githubOptions, this);
+    } else {
+        return new (_PrivateGitHubProvider || _load_PrivateGitHubProvider()).<span class="apidocCodeKeywordSpan">PrivateGitHubProvider
+</span>(githubOptions, token);
+    }
+case &#x22;s3&#x22;:
+    {
+        const s3 = data;
+        return new (_GenericProvider || _load_GenericProvider()).GenericProvider({
+            provider: &#x22;generic&#x22;,
+            url: (0, (_publishOptions || _load_publishOptions()).s3Url)(s3),
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.electron-updater.api" id="apidoc.module.electron-updater.api">module electron-updater.api</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.electron-updater.api.Provider" id="apidoc.element.electron-updater.api.Provider">
+        function <span class="apidocSignatureSpan">electron-updater.api.</span>Provider
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class Provider {
+    setRequestHeaders(value) {
+        this.requestHeaders = value;
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.electron-updater.api.UpdaterSignal" id="apidoc.element.electron-updater.api.UpdaterSignal">
+        function <span class="apidocSignatureSpan">electron-updater.api.</span>UpdaterSignal
+        <span class="apidocSignatureSpan">(emitter)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class UpdaterSignal {
+    constructor(emitter) {
+        this.emitter = emitter;
+    }
+    progress(handler) {
+        addHandler(this.emitter, DOWNLOAD_PROGRESS, handler);
+    }
+    updateDownloaded(handler) {
+        addHandler(this.emitter, &#x22;update-downloaded&#x22;, handler);
+    }
+    updateCancelled(handler) {
+        addHandler(this.emitter, &#x22;update-cancelled&#x22;, handler);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * The logger. You can pass [electron-log](https://github.com/megahertz/electron-log), [winston](https://github.com/winstonjs/winston
+) or another logger with the following interface: `{ info(), warn(), error() }`.
+ * Set it to `null` if you would like to disable a logging feature.
+ */
+this.logger = global.__test_app ? null : console;
+/**
+ * For type safety you can use signals, e.g. `autoUpdater.signals.updateDownloaded(() =&#x3e; {})` instead of `autoUpdater.on(&#
+x27;update-available&#x27;, () =&#x3e; {})`
+ */
+this.signals = new (_api || _load_api()).<span class="apidocCodeKeywordSpan">UpdaterSignal</span>(this);
+this.updateAvailable = false;
+this.on(&#x22;error&#x22;, error =&#x3e; {
+    if (this.logger != null) {
+        this.logger.error(`Error: ${error.stack || error.message}`);
+    }
+});
+if (app != null || global.__test_app != null) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.electron-updater.api.formatUrl" id="apidoc.element.electron-updater.api.formatUrl">
+        function <span class="apidocSignatureSpan">electron-updater.api.</span>formatUrl
+        <span class="apidocSignatureSpan">(url)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function formatUrl(url) {
+    if (url.path != null &#x26;&#x26; url.pathname == null) {
+        url.pathname = url.path;
+    }
+    return (0, (_url || _load_url()).format)(url);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.electron-updater.api.getChannelFilename" id="apidoc.element.electron-updater.api.getChannelFilename">
+        function <span class="apidocSignatureSpan">electron-updater.api.</span>getChannelFilename
+        <span class="apidocSignatureSpan">(channel)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getChannelFilename(channel) {
+    return `${channel}.${getCurrentPlatform() === &#x22;darwin&#x22; ? &#x22;json&#x22; : &#x22;yml&#x22;}`;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.electron-updater.api.getCurrentPlatform" id="apidoc.element.electron-updater.api.getCurrentPlatform">
+        function <span class="apidocSignatureSpan">electron-updater.api.</span>getCurrentPlatform
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getCurrentPlatform() {
+    return process.env.TEST_UPDATER_PLATFORM || process.platform;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.electron-updater.api.getCustomChannelName" id="apidoc.element.electron-updater.api.getCustomChannelName">
+        function <span class="apidocSignatureSpan">electron-updater.api.</span>getCustomChannelName
+        <span class="apidocSignatureSpan">(channel)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getCustomChannelName(channel) {
+    return `${channel}${getChannelFilePrefix()}`;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.electron-updater.api.getDefaultChannelName" id="apidoc.element.electron-updater.api.getDefaultChannelName">
+        function <span class="apidocSignatureSpan">electron-updater.api.</span>getDefaultChannelName
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getDefaultChannelName() {
+    return `latest${getChannelFilePrefix()}`;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.electron-updater.electronHttpExecutor" id="apidoc.module.electron-updater.electronHttpExecutor">module electron-updater.electronHttpExecutor</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.electron-updater.electronHttpExecutor.ElectronHttpExecutor" id="apidoc.element.electron-updater.electronHttpExecutor.ElectronHttpExecutor">
+        function <span class="apidocSignatureSpan">electron-updater.electronHttpExecutor.</span>ElectronHttpExecutor
+        <span class="apidocSignatureSpan">(_electronBuilderHttp || _load_electronBuilderHttp()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class ElectronHttpExecutor extends (_electronBuilderHttp || _load_electronBuilderHttp()).HttpExecutor {
+    download(url, destination, options) {
+        var _this = this;
+
+        return (0, (_bluebirdLst || _load_bluebirdLst()).coroutine)(function* () {
+            if (options == null || !options.skipDirCreation) {
+                yield (0, (_fsExtraP || _load_fsExtraP()).ensureDir)(_path.dirname(destination));
+            }
+            return yield options.cancellationToken.createPromise(function (resolve, reject, onCancel) {
+                const parsedUrl = (0, (_url || _load_url()).parse)(url);
+                _this.doDownload((0, (_electronBuilderHttp || _load_electronBuilderHttp()).configureRequestOptions)({
+                    protocol: parsedUrl.protocol,
+                    hostname: parsedUrl.hostname,
+                    path: parsedUrl.path,
+                    port: parsedUrl.port ? parseInt(parsedUrl.port, 10) : undefined,
+                    headers: options.headers || undefined
+                }), destination, 0, options, function (error) {
+                    if (error == null) {
+                        resolve(destination);
+                    } else {
+                        reject(error);
+                    }
+                }, onCancel);
+            });
+        })();
+    }
+    doApiRequest(options, cancellationToken, requestProcessor) {
+        let redirectCount = arguments.length &#x3e; 3 &#x26;&#x26; arguments[3] !== undefined ? arguments[3] : 0;
+
+        if (debug.enabled) {
+            debug(`request: ${(0, (_electronBuilderHttp || _load_electronBuilderHttp()).dumpRequestOptions)(options)}`);
+        }
+        return cancellationToken.createPromise((resolve, reject, onCancel) =&#x3e; {
+            const request = (_electron || _load_electron()).net.request(options, response =&#x3e; {
+                try {
+                    this.handleResponse(response, options, cancellationToken, resolve, reject, redirectCount, requestProcessor);
+                } catch (e) {
+                    reject(e);
+                }
+            });
+            this.addTimeOutHandler(request, reject);
+            request.on(&#x22;error&#x22;, reject);
+            requestProcessor(request, reject);
+            onCancel(() =&#x3e; request.abort());
+        });
+    }
+    doRequest(options, callback) {
+        options.session = (_electron || _load_electron()).session.fromPartition(NET_SESSION_NAME);
+        return (_electron || _load_electron()).net.request(options, callback);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    }
+});
+if (app != null || global.__test_app != null) {
+    this.app = app || global.__test_app;
+    this.untilAppReady = (_bluebirdLst2 || _load_bluebirdLst2()).default.resolve();
+} else {
+    this.app = require(&#x22;electron&#x22;).app;
+    (_electronBuilderHttp || _load_electronBuilderHttp()).executorHolder.httpExecutor = new (_electronHttpExecutor || _load_electronHttpExecutor
+()).<span class="apidocCodeKeywordSpan">ElectronHttpExecutor</span>();
+    this.untilAppReady = new (_bluebirdLst2 || _load_bluebirdLst2()).default(resolve =&#x3e; {
+        if (this.app.isReady()) {
+            if (this.logger != null) {
+                this.logger.info(&#x22;App is ready&#x22;);
+            }
+            resolve();
+        } else {
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
